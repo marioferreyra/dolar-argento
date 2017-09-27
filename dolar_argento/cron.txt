@@ -1,0 +1,2 @@
+59 15 * * 1,2,3,4,5 ~/Projects/dolar-argento/runer.sh
+1 16 * * 1,2,3,4,5 ~/Projects/dolar-argento/channel.sh
