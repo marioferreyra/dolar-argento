@@ -1,1 +1,1 @@
-fades -p python3 -r requirements.txt  dolar_argento/runer.py
+fades -p python3.5 -r requirements.txt  dolar_argento/runer.py
