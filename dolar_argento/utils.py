@@ -2,9 +2,13 @@ import emoji
 
 
 def format_cotizaciones_for_telegram(cotizaciones):
+    if not cotizaciones:
+        return None
+
     formated = []
     for cotizacion in cotizaciones:
         formated.append(_format_cotizacion(cotizacion))
+
     return "\n\n".join(formated)
 
 

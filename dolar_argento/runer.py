@@ -5,17 +5,12 @@ from bancos_data import load_data
 from scraper import parse_cotizacion
 from logger_factory import get_logger
 
-logger = get_logger(__name__)
+logger = get_logger("runner")
 sem = asyncio.Semaphore(5)
 db_session = get_session()
 load_data(db_session)
 bancos = get_bancos(db_session)
 
-
-# @asyncio.coroutine
-# def get(*args, **kwargs):
-#     response = yield from aiohttp.request('GET', *args, **kwargs)
-#     return (yield from response.text())
 
 async def get(url):
     async with ClientSession() as session:

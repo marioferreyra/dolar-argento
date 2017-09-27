@@ -1,0 +1,1 @@
+fades -p python3 -r requirements.txt  dolar_argento/channel.py
